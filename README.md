@@ -1,5 +1,9 @@
 # VTEX "just a Div"
 
+## Reference
+
+Initial Template: [just a Div](https://github.com/vtex-apps/just-a-div)
+
 ## Description
 
 When life gives you plenty of lemons, you better put them in a box to keep them organized.
