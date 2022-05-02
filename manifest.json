@@ -1,9 +1,9 @@
 {
-  "vendor": "vtex",
-  "name": "just-a-div",
+  "vendor": "bauknechtde",
+  "name": "scroll-listener-wrapper",
   "version": "0.2.0",
-  "title": "VTEX Just-a-DIV",
-  "description": "Sometimes life gives you plenty of lemons. At times it is needed to put them in a box.",
+  "title": "Bauknecht-DE Scroll Listener Wrapper",
+  "description": "This app generates a wrapper container that listens to and reacts to the scroll events.",
   "defaultLocale": "en-EN",
   "builders": {
     "messages": "1.x",
