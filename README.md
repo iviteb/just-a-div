@@ -1,4 +1,4 @@
-# VTEX "just a Div"
+# VTEX "Scroll Listener Wrapper"
 
 ## Reference
 
@@ -24,19 +24,19 @@ That's why I've built the most useless but yet handy app in VTEX.
 First, install the app via VTEX Toolbelt. 
 
 ```bash
-    vtex install vtex.just-a-div@0.x
+    vtex install bauknechtde.scroll-listener-wrapper@0.x
 ```
 
 To use this app, you need to import in your dependencies on `manifest.json`.
 
 ```json
   "dependencies": {
-    "vtex.just-a-div": "0.x"
+    "bauknechtde.scroll-listener-wrapper": "0.x"
   }
 ```
 
 ### How it works?
-Whenever you need to wrap something in place without adding functionality on top, all you need is a plain div. Just add a new just-a-div block to your config and add the content you want to wrap as children.
+Whenever you need to wrap something in place without adding functionality on top, all you need is a plain div. Just add a new scroll-listener-wrapper block to your config and add the content you want to wrap as children.
 
 
 ### how it's used
@@ -46,7 +46,7 @@ The app only supports the very basics:
 * **NEW** - YES! The ID makes sense. Now you have it! Feel free to drop IDs starting at version 0.2.0 via the prop "htmlId"
 
 ```json
-"just-a-div#aroundthelinks": {
+"scroll-listener-wrapper#aroundthelinks": {
   "props": {
     "blockClass": "linkWrapper",
     "htmlId": "look-mum-i-am-unique"
@@ -64,7 +64,7 @@ The app only supports the very basics:
 The following CSS handles can be used for styling:
 
 ```js
-  'justDiv'
+  'scrollListener'
 ```
 
 

@@ -1,6 +1,6 @@
 {
-  "just-a-div": { 
-    "component": "justDiv",
+  "scroll-listener-wrapper": { 
+    "component": "scrollListenerWrapper",
     "composition": "children" 
   }
 }

@@ -1,7 +1,7 @@
 {
   "vendor": "bauknechtde",
   "name": "scroll-listener-wrapper",
-  "version": "0.2.0",
+  "version": "0.0.1",
   "title": "Bauknecht-DE Scroll Listener Wrapper",
   "description": "This app generates a wrapper container that listens to and reacts to the scroll events.",
   "defaultLocale": "en-EN",

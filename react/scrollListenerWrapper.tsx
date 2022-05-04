@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import { useCssHandles } from 'vtex.css-handles'
 
-interface justDivProps {
+interface scrollListenerWrapperProps {
   blockClass?: string,
   htmlId?: string,
   minPosition?: number
@@ -10,10 +10,10 @@ interface justDivProps {
 }
 
 const CSS_HANDLES = [
-  'justDiv'
+  'scrollListener'
 ] as const;
 
-const justDiv: StorefrontFunctionComponent<justDivProps> = (
+const scrollListenerWrapper: StorefrontFunctionComponent<scrollListenerWrapperProps> = (
   { 
     children,
     blockClass="",
@@ -51,11 +51,11 @@ const justDiv: StorefrontFunctionComponent<justDivProps> = (
 
   const { handles } = useCssHandles(CSS_HANDLES, blockClass);
   return (<div
-    className={handles.justDiv +
+    className={handles.scrollListener +
                 (scrollDirection === "up" ? "--scrollUp" : "") +
                 (scrollDirection === "down" ? "--scrollDown" : "")
               }
-    style={scrollDirection === "up" || scrollDirection === "down" ? {position: "fixed"} : {width: "100%"}}
+    style={scrollDirection === "up" || scrollDirection === "down" ? {position: "fixed"} : {position: "sticky"}}
     id={htmlId}>
             {children}
           </div>)
@@ -63,10 +63,10 @@ const justDiv: StorefrontFunctionComponent<justDivProps> = (
 
 
 //Stuff for the site editor. Might not need it.
-justDiv.schema = {
+scrollListenerWrapper.schema = {
   title: 'editor.field.title',
   description: 'editor.field.description',
   type: 'object', 
 }
 
-export default justDiv
+export default scrollListenerWrapper
